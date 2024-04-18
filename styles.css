@@ -91,5 +91,32 @@ form input::placeholder {
 
 .input-wrapper + .input-wrapper {
   margin-top: 1.6rem;
+
+
 }
 
+button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border-radius: .4rem;
+  border: none;
+  background-color: var(--bg-button);
+  color: var(--tt-button);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background: var(--bg-button-hover);
+}
