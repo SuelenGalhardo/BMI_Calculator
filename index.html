@@ -21,15 +21,15 @@
 
     <div class="container">
       <main class="card">
-        <form action="">
+        <form class="js__form">
           <h1 class="title">BMI Calculator</h1>
           <div class="input-wrapper">
             <label for="weight">Weight(kg)</label>
-            <input id="weight" class="" type="text" placeholder="60" />
-            <label for="Height">Height(m)</label>
-            <input id="Height" class="" type="text" placeholder="1.65" />
+            <input id="weight" class="js__input__weight" type="text" placeholder="60" />
+            <label for="Height">Height(cm)</label>
+            <input id="Height" class="js__input__weight" type="text" placeholder="1.65" />
           </div>
-          <button class="button" type="">
+          <button class="button js__btn__submit" type="submit">
             Calculator BMI
             <img src="./assets/arrow-up-right.svg" alt="arrow-up-right" />
           </button>
@@ -37,13 +37,14 @@
       </main>
     </div>
 
-    <div class="modal-wrapper">
+    <div class="modal-wrapper js__modal__wrapper">
         <div class="modal card">
             <h2 class="title">
-                Your BMI is 28
+            
             </h2>
-            <button class="btn_close"><img src="./assets/close.svg" alt=""></button>
-        </div>
+            <button class="btn_close js__btn__close"><img src="./assets/close.svg" alt=""></button>
+            <span class="js_modal_span">Your BMI is 28</span> 
+          </div>
     </div>
   </body>
 </html>
