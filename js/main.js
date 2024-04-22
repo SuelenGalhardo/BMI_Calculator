@@ -7,6 +7,8 @@ const form = document.querySelector(".js__form");
 const inputWeight = document.querySelector(".js__input__weight");
 const inputHeight = document.querySelector(".js__input__height");
 //const btnSubmit = document.querySelector(".js__btn__submit");
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
 
 form.onsubmit = (event) => {
   event.preventDefault();
@@ -33,7 +35,8 @@ function displayResultMessage(result) {
   Modal.message.innerText = message;
   Modal.open();
 }
-//function validaçao de numeros
+
+
 
 /* form.onsubmit = handleSubmit;
     
