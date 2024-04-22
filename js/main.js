@@ -1,4 +1,4 @@
-//variables
+
 import { Modal } from "./modal.js";
 import { AlertError } from "./alert_error.js";
 import { calculateIMC, notNumber } from "./utils.js";
@@ -6,7 +6,7 @@ import { calculateIMC, notNumber } from "./utils.js";
 const form = document.querySelector(".js__form");
 const inputWeight = document.querySelector(".js__input__weight");
 const inputHeight = document.querySelector(".js__input__height");
-//const btnSubmit = document.querySelector(".js__btn__submit");
+
 inputWeight.oninput = () => AlertError.close()
 inputHeight.oninput = () => AlertError.close()
 
