@@ -1,28 +1,11 @@
 //variables
+import {Modal} from './modal.js'
 
 const form = document.querySelector(".js__form");
 const inputWeight = document.querySelector(".js__input__weight");
-const inputHeight = document.querySelector(".js__input__weight");
-const btnSubmit = document.querySelector(".js__btn__submit");
+const inputHeight = document.querySelector(".js__input__height");
+//const btnSubmit = document.querySelector(".js__btn__submit");
 
-
-
-//object literal- modal
-
-const Modal = {
-
-  wrapper: document.querySelector(".js__modal__wrapper"),
-  message: document.querySelector(".js_modal_span"),
-  btnClose:  document.querySelector(".js__btn__close"),
-
-  open() {
-    Modal.wrapper.classList.add("open");
-  },
-  close(){
-    Modal.wrapper.classList.remove('open')
-  }
-
-}
 
 
 form.onsubmit = (event) => {
@@ -40,10 +23,7 @@ form.onsubmit = (event) => {
   Modal.open()
 };
 
-Modal.btnClose.onclick = () => {
- // modalWrapper.classList.remove('open')
- Modal.close()
-}
+
 
 
 
